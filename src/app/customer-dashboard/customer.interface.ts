@@ -1,7 +1,7 @@
 export interface Customer {
-    codigo: number;
-    nome: string;
-    segmento: string;
-    tipo: string[];
-    status: string;
+    id: number;
+    name: string;
+    avatar: string;
+    segment: string;
+    type: string[];
 }

@@ -9,6 +9,6 @@ export class CustomerService {
     constructor (private http: HttpClient) { }
 
     listCustomers() {
-        return this.http.get<Customer[]>('assets/customers.json');
+        return this.http.get<any>('https://randomapi.com/api/cfe9406d9c20f9adcefe02d92b8d7f4c');
     }
 }

@@ -14,7 +14,7 @@ export class CustomerDashboardComponent implements OnInit {
   constructor(private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
-    this.customers = this.activatedRoute.snapshot.data['customers'];
+    this.customers = this.activatedRoute.snapshot.data['customers']['results'][0];
   }
 
 }
