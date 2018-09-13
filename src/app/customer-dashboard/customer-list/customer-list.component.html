@@ -1,0 +1,36 @@
+<div class="table-responsive" *ngIf="customers.length; else noCustomers">
+  <table class="table table-striped table-borderless">
+    <thead>
+      <tr>
+        <th scope="col">Status</th>
+        <th scope="col">Código</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Segmento</th>
+        <th scope="col">Tipo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let customer of customers">
+        <td>
+          <span
+            class="fa fa-square"
+            [ngClass]="customer.status === 'ativo' ? 'text-success' : 'text-warning'">
+          </span>
+        </td>
+        <td>{{ customer.id }}</td>
+        <td>{{ customer.name }}</td>
+        <td>{{ customer.segment }}</td>
+        <td>
+          <span
+            *ngFor="let type of customer.type"
+            class="pr-1 fa fa-{{ type }}">
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<ng-template #noCustomers>
+  <p class="text-muted text-center">Nenhum cliente encontrado</p>
+</ng-template>

@@ -1,0 +1,9 @@
+body {
+    padding-top: 120px;
+}
+
+@media(min-width: 336px) {
+    body {
+        padding-top: 80px;
+    }
+}

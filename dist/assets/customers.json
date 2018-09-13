@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name": "Johnny G. Stewart",
+        "segment": "Agroindustria",
+        "type": [],
+        "status": "ativo"
+    },
+    {
+        "id": 2,
+        "name": "David Rosetta",
+        "segment": "Agroindustria",
+        "type": ["cloud", "star"],
+        "status": "inativo"
+    },
+    {
+        "id": 3,
+        "name": "Kauê Cardoso Almeida",
+        "segment": "Não informado",
+        "type": ["star"],
+        "status": "ativo"
+    },
+    {
+        "id": 4,
+        "name": "Luana Souza Correia",
+        "segment": "Não informado",
+        "type": [],
+        "status": "ativo"
+    },
+    {
+        "id": 5,
+        "name": "Fusberta Talon",
+        "segment": "Não informado",
+        "type": [],
+        "status": "inativo"
+    }
+]

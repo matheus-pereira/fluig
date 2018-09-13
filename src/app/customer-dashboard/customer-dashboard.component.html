@@ -1,0 +1,19 @@
+<h2 class="text-muted">Dashboard de Clientes</h2>
+
+<hr>
+
+<button class="btn btn-secondary">Novo cliente</button>
+<button class="btn btn-light border-secondary ml-2">Classificar</button>
+
+<form class="form-inline my-2 my-sm-0 float-sm-right">
+    <div class="input-group">
+        <input type="text" class="form-control" name="filter" [(ngModel)]="filter">
+        <div class="input-group-append">
+            <div class="input-group-text"><span class="fa fa-search"></span></div>
+        </div>
+    </div>
+</form>
+
+<hr>
+
+<app-customer-list [customers]="customers | filterCustomer: filter"></app-customer-list>
